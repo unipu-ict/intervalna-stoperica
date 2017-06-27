@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/druga"
+    tools:context="com.projekt.intervalnastoperica.Main">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:background="@color/prva"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/treca"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-medium"
+            android:background="@android:color/transparent"
+            android:text="@string/app_name"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonVjezba"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            fancy:fb_defaultColor="@color/prva"
+            fancy:fb_focusColor="#313131"
+            fancy:fb_iconResource="@drawable/vjezba"
+            fancy:fb_iconPaddingLeft="10dp"
+            fancy:fb_iconPaddingRight="10dp"
+            fancy:fb_radius="64dp"
+            fancy:fb_textColor="#FFFFFF"
+            android:layout_margin="35dp"
+            android:elevation="5dp"
+            />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonSettings"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            fancy:fb_defaultColor="@color/prva"
+            fancy:fb_focusColor="#313131"
+            fancy:fb_iconResource="@drawable/settings"
+            fancy:fb_iconPaddingLeft="10dp"
+            fancy:fb_iconPaddingRight="10dp"
+            fancy:fb_radius="64dp"
+            fancy:fb_textColor="#FFFFFF"
+            android:layout_margin="35dp"
+            android:elevation="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

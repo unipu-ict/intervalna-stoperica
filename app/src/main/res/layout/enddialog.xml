@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="@color/druga"
+    >
+
+    <TextView
+        android:id="@+id/naslov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/treca"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:text="Vjezba završena!"
+        />
+
+    <TextView
+        android:id="@+id/priprema"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/treca"
+        android:textSize="15dp"
+        android:text="Priprema:"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBaseline="@+id/pripremaTotal"
+        android:layout_alignBottom="@+id/pripremaTotal"
+        android:layout_alignStart="@+id/naslov" />
+
+    <TextView
+        android:id="@+id/pripremaTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/treca"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:maxLines="1"
+        android:layout_below="@+id/naslov"
+        android:layout_toEndOf="@+id/priprema" />
+
+    <TextView
+        android:id="@+id/vjezba"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/treca"
+        android:textSize="15dp"
+        android:text="Vježba:"
+        android:fontFamily="sans-serif-medium"
+        android:layout_alignBaseline="@+id/vjezbaTotal"
+        android:layout_alignBottom="@+id/vjezbaTotal"
+        android:layout_alignStart="@+id/priprema"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:id="@+id/vjezbaTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/treca"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:maxLines="1"
+        android:layout_below="@+id/priprema"
+        android:layout_toEndOf="@+id/priprema" />
+
+    <TextView
+        android:id="@+id/odmor"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/treca"
+        android:textSize="15dp"
+        android:text="Odmor:"
+        android:fontFamily="sans-serif-medium"
+        android:layout_alignBaseline="@+id/odmorTotal"
+        android:layout_alignBottom="@+id/odmorTotal"
+        android:layout_alignStart="@+id/vjezba"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/odmorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/treca"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:maxLines="1"
+        android:layout_below="@+id/vjezba"
+        android:layout_toEndOf="@+id/odmor" />
+
+    <TextView
+        android:id="@+id/ukupno"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/treca"
+        android:textSize="15dp"
+        android:text="Ukupno:"
+        android:fontFamily="sans-serif-medium"
+        android:layout_alignBaseline="@+id/ukupnoTotal"
+        android:layout_alignBottom="@+id/ukupnoTotal"
+        android:layout_alignStart="@+id/odmor"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/ukupnoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/treca"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:maxLines="1"
+        android:layout_below="@+id/odmor"
+        android:layout_toEndOf="@+id/ukupno" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        >
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/treca"
+            android:text="ok"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

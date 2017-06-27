@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projekt.intervalnastoperica.Vjezba"
+    android:background="@color/druga"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:background="@color/prva"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/treca"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-medium"
+            android:background="@android:color/transparent"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:id="@+id/circleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        CircleProgressView:cpv_autoTextSize="true"
+        CircleProgressView:cpv_barColor="@color/prva"
+        CircleProgressView:cpv_barWidth="55dp"
+        CircleProgressView:cpv_innerContourSize="2dp"
+        CircleProgressView:cpv_maxValue="60"
+        CircleProgressView:cpv_outerContourSize="2dp"
+        CircleProgressView:cpv_innerContourColor="@color/treca"
+        CircleProgressView:cpv_outerContourColor="@color/treca"
+        CircleProgressView:cpv_rimColor="@color/treca"
+        CircleProgressView:cpv_rimWidth="45dp"
+        CircleProgressView:cpv_seekMode="false"
+        CircleProgressView:cpv_showUnit="false"
+        CircleProgressView:cpv_spinColor="@color/prva"
+        CircleProgressView:cpv_textColor="@color/prva"
+        CircleProgressView:cpv_textScale="0"
+        CircleProgressView:cpv_unit="Odmor"
+        CircleProgressView:cpv_unitColor="@color/treca"
+        CircleProgressView:cpv_unitPosition="bottom"
+        CircleProgressView:cpv_unitScale="0.6"
+        CircleProgressView:cpv_value="14"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/relativeLayout"
+        android:padding="50dp"
+        android:fontFamily="sans-serif-medium"
+        />
+
+    <TextView
+        android:id="@+id/status"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="45sp"
+        android:textColor="@color/treca"
+        android:gravity="center"
+        android:layout_alignLeft="@id/circleView"
+        android:layout_alignTop="@id/circleView"
+        android:layout_alignRight="@id/circleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="75sp"
+        android:textColor="@color/treca"
+        android:gravity="center"
+        android:layout_alignLeft="@id/circleView"
+        android:layout_alignTop="@id/circleView"
+        android:layout_alignRight="@id/circleView"
+        android:layout_alignBottom="@id/circleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonPlayPause"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            fancy:fb_defaultColor="@color/prva"
+            fancy:fb_focusColor="#313131"
+            fancy:fb_iconResource="@drawable/play"
+            fancy:fb_iconPaddingLeft="10dp"
+            fancy:fb_iconPaddingRight="10dp"
+            fancy:fb_radius="64dp"
+            fancy:fb_textColor="#FFFFFF"
+            android:layout_margin="25dp"
+            android:elevation="5dp"
+            />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonNext"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            fancy:fb_defaultColor="@color/prva"
+            fancy:fb_focusColor="#313131"
+            fancy:fb_iconResource="@drawable/next"
+            fancy:fb_iconPaddingLeft="10dp"
+            fancy:fb_iconPaddingRight="10dp"
+            fancy:fb_radius="64dp"
+            fancy:fb_textColor="#FFFFFF"
+            android:layout_margin="25dp"
+            android:elevation="5dp"
+            android:layout_toEndOf="@+id/buttonPlayPause"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

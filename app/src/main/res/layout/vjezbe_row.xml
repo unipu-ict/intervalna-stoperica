@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+
+        >
+
+        <TextView
+            android:id="@+id/rowBroj"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/treca"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/relative1"
+        >
+
+        <TextView
+            android:id="@+id/rowIme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="aaaaaa"
+            android:textColor="@color/treca"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/rowLabel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="15sp"
+            android:text="Trajanje:"
+            android:maxLines="1"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/treca"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rowIme"
+            />
+
+        <TextView
+            android:id="@+id/rowTrajanje"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="15sp"
+            android:text=""
+            android:maxLines="1"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/treca"
+            android:layout_below="@+id/rowLabel"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/relative2"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical|right"
+        >
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/buttonInfo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/druga"
+            materialdesign:iconDrawable="@drawable/ic_info" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
