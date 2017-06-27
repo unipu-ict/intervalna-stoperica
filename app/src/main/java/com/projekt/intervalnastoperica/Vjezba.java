@@ -29,7 +29,6 @@ public class Vjezba extends AppCompatActivity {
     Intent i;
     Context ctx;
     CountDownTimer ct;
-    Intent test;
     CircleProgressView progress;
     TextView timer;
     TextView status;
@@ -37,7 +36,6 @@ public class Vjezba extends AppCompatActivity {
     int start = -1;
     long pauseVal;
     int pauseStatus;
-    long aaa;
 
     int def_priprema;
     int def_vjezba;
